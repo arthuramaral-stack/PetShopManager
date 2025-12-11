@@ -1,36 +1,27 @@
 # 🐾 PetShop Manager  
-Sistema desenvolvido para a disciplina **Programação Orientada a Objetos**, com objetivo de gerenciar **Clientes**, **Pets** e **Serviços** através de uma interface gráfica simples e funcional utilizando **Java Swing**.
+Sistema desenvolvido para a disciplina **Programação Orientada a Objetos**, com objetivo de gerenciar **Clientes**, **Pets** e **Serviços** através de uma interface gráfica funcional utilizando **Java Swing**.
 
 ---
 
-## 📘 Sumário
-- [Descrição](#descrição)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Arquitetura do Projeto](#arquitetura-do-projeto)
-- [Funcionalidades](#funcionalidades)
-- [Como Executar o Projeto](#como-executar-o-projeto)
-- [Capturas de Tela](#capturas-de-tela)
-- [Persistência de Dados](#persistência-de-dados)
-- [Autores](#autores)
-- [Documentação Completa](#documentação-completa)
+## 📄 Documentação Oficial
+
+A documentação completa do sistema está disponível em PDF:
+
+👉 **[Clique aqui para abrir o Manual do Sistema](./Instrucoes_PetShop_Manager.pdf)**  
+*(Arquivo incluso no repositório)*
 
 ---
 
-## 📌 Descrição
-O **PetShop Manager** é um sistema que permite:
+## 📌 Descrição Geral
+O **PetShop Manager** permite:
 
-✔ Cadastrar e gerenciar clientes  
-✔ Cadastrar pets vinculados a clientes  
-✔ Agendar serviços como banho e tosa, consulta veterinária, hospedagem e mais  
-✔ Persistir todos os dados em arquivos CSV  
+- Cadastrar e gerenciar **clientes**
+- Cadastrar **pets** vinculados a seus respectivos donos
+- Agendar e cancelar **serviços**
+- Manter dados persistentes utilizando arquivos CSV
+- Navegar por telas intuitivas feitas com Java Swing
 
-O foco do projeto é demonstrar:
-
-- Boas práticas de POO  
-- Estruturação em camadas (MVC simplificado)  
-- Uso de interface gráfica com Swing  
-- Manipulação de arquivos CSV  
-- Validação de entrada de dados  
+Ele foi desenvolvido com foco em organização, boas práticas de POO e código limpo.
 
 ---
 
@@ -39,25 +30,25 @@ O foco do projeto é demonstrar:
 - **Java 17+**
 - **Eclipse IDE**
 - **Java Swing (GUI)**
-- **CSV (persistência de dados)**
+- **Arquivos CSV para persistência**
 
 ---
 
-## 🧱 Arquitetura do Projeto
+## 🧱 Arquitetura do Projeto (MVC Simplificado)
 
 src/
-├── dao/ # Camada de acesso a dados (CSV)
+├── dao/ # Acesso a arquivos CSV
 │ ├── ClienteDAO.java
 │ ├── PetDAO.java
 │ ├── ServicoDAO.java
 │ └── CSVUtils.java
 │
-├── model/ # Classes principais (entidades)
+├── model/ # Entidades principais
 │ ├── Cliente.java
 │ ├── Pet.java
 │ └── Servico.java
 │
-└── view/ # Telas da aplicação (Swing)
+└── view/ # Telas da aplicação (Java Swing)
 ├── MenuPrincipal.java
 ├── TelaClientes.java
 ├── TelaPets.java
@@ -69,62 +60,33 @@ src/
 ## ✨ Funcionalidades
 
 ### ✔ **Clientes**
-- Cadastro com validação (nome, telefone, email)
+- Cadastro com validação
 - Exclusão
 - Listagem automática
+- Persistência no arquivo `clientes.csv`
 
 ### ✔ **Pets**
 - Cadastro vinculado ao cliente
-- Validações (idade e peso)
+- Validação de campos
 - Exclusão e listagem
+- Persistência no arquivo `pets.csv`
 
 ### ✔ **Serviços**
-- Agendamento de serviços
-- Preço validado
-- Data obrigatoriamente futura
-- Cancelamento e listagem
+- Agendamento validado (preço, data futura, cliente e pet selecionados)
+- Cancelamento
+- Armazenamento no arquivo `servicos.csv`
 
 ---
 
 ## ▶️ Como Executar o Projeto
 
-1. Abra o Eclipse  
-2. Importe o projeto via:  
-   `File → Import → Existing Projects into Workspace`  
-3. Abra o arquivo:  
-   `src/view/MenuPrincipal.java`  
-4. Clique com o botão direito →  
+1. Abra o **Eclipse**
+2. Clique em **File → Import → Existing Projects into Workspace**
+3. Selecione a pasta do projeto **PetShopManager**
+4. Abra:  
+   `src/view/MenuPrincipal.java`
+5. Clique com o botão direito →  
    **Run As → Java Application**
-
-A interface gráfica será exibida automaticamente.
-
----
-
-## 🖼 Capturas de Tela
-
-### **Menu Principal**
-![Menu](./CapturaMenu.png)
-
-### **Clientes**
-![Clientes](./CapturaClientes.png)
-
-### **Pets**
-![Pets](./CapturaPets.png)
-
-### **Serviços**
-![Servicos](./CapturaServicos.png)
-
----
-
-## 💾 Persistência de Dados
-
-Os dados são armazenados automaticamente em arquivos CSV:
-
-- `clientes.csv`
-- `pets.csv`
-- `servicos.csv`
-
-Cada linha representa um registro, permitindo fácil leitura, exportação e backup.
 
 ---
 
@@ -135,24 +97,15 @@ Cada linha representa um registro, permitindo fácil leitura, exportação e bac
 - **Arthur Rocha**
 
 Professor: *Felippe Pires Ferreira*  
-Disciplina: *Programação Orientada a Objetos (POO)*  
-
----
-
-## 📄 Documentação Completa
-
-O PDF oficial com instruções e prints está disponível aqui:
-
-👉 [Instrucoes_PetShop_Manager.pdf](./Instrucoes_PetShop_Manager.pdf)
+Disciplina: *Programação Orientada a Objetos*  
+Data: *09/12/2025*
 
 ---
 
 ## 🎓 Status do Projeto
 ✔ Concluído  
 ✔ Testado  
-✔ Entregue para avaliação
+✔ Documentado  
+✔ Entregue para avaliação acadêmica  
 
 ---
-
-## 📝 Licença
-Este projeto é destinado apenas para fins acadêmicos.
