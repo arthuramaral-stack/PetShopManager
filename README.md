@@ -143,7 +143,7 @@ Disciplina: *Programação Orientada a Objetos (POO)*
 
 O PDF oficial com instruções e prints está disponível aqui:
 
-👉 [Instrucoes_PetShop_Manager_V2.pdf](./Instrucoes_PetShop_Manager_V2.pdf)
+👉 [Instrucoes_PetShop_Manager.pdf](./Instrucoes_PetShop_Manager.pdf)
 
 ---
 
