@@ -34,29 +34,6 @@ Ele foi desenvolvido com foco em organização, boas práticas de POO e código 
 
 ---
 
-## 🧱 Arquitetura do Projeto (MVC Simplificado)
-
-src/
-├── dao/ # Acesso a arquivos CSV
-│ ├── ClienteDAO.java
-│ ├── PetDAO.java
-│ ├── ServicoDAO.java
-│ └── CSVUtils.java
-│
-├── model/ # Entidades principais
-│ ├── Cliente.java
-│ ├── Pet.java
-│ └── Servico.java
-│
-└── view/ # Telas da aplicação (Java Swing)
-├── MenuPrincipal.java
-├── TelaClientes.java
-├── TelaPets.java
-└── TelaServicos.java
-
-
----
-
 ## ✨ Funcionalidades
 
 ### ✔ **Clientes**
